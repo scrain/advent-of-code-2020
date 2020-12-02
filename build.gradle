@@ -1,0 +1,15 @@
+plugins {
+    id 'idea'
+    id 'groovy'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:2.5.12'
+
+    testImplementation 'org.spockframework:spock-core:1.3-groovy-2.5'
+    testImplementation 'junit:junit:4.13'
+}
