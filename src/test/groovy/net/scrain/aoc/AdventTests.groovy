@@ -27,4 +27,15 @@ class AdventTests extends Specification {
             'day02.example.txt' | 2             | 1
             'day02.data.txt'    | 418           | 616
     }
+
+    def "Verify Day03"() {
+        expect:
+            Day03.getPart1Result(filename) == expectedPart1
+            Day03.getPart2Result(filename) == expectedPart2
+
+        where:
+            filename            | expectedPart1  | expectedPart2
+            'day03.example.txt' | 7              | 336
+            'day03.data.txt'    | 234            | 5813773056
+    }
 }
