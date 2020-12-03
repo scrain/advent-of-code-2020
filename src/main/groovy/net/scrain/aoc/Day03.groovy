@@ -1,7 +1,7 @@
 package net.scrain.aoc
 
 class Day03 {
-    private static long traverseSlope(String filename, right, down) {
+    private static long traverseSlope(filename, right, down) {
         List lines = new File(filename).readLines()
         int x = 0
         long trees = 0
@@ -19,11 +19,11 @@ class Day03 {
         trees
     }
 
-    static getPart1Result(String filename) {
+    static getPart1Result(filename) {
         traverseSlope(filename, 3, 1)
     }
 
-    static getPart2Result(String filename) {
+    static getPart2Result(filename) {
         traverseSlope(filename, 1, 1) *
         traverseSlope(filename, 3, 1) *
         traverseSlope(filename, 5, 1) *
